@@ -19,6 +19,7 @@ const multiply = function (...args) {
   args.forEach((element) => {
     total = total * element;
   });
+  console.log(total);
   return total;
 };
 
@@ -27,15 +28,15 @@ const power = function (num1, num2) {
 };
 
 const factorial = function (num) {
-  let total = 1;
-  if (num === 1 && num === 0) {
-    return total;
+  let result = 1;
+  if (num === 0 && num === 1) {
+    return result;
   } else {
-    for (let i = 1; i <= num; i++) {
-      total *= i;
+    for (let i = 2; i <= num; i++) {
+      result *= i;
     }
   }
-  return total;
+  return result;
 };
 
 // Do not edit below this line
