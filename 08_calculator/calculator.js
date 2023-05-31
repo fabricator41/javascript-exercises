@@ -6,7 +6,7 @@ const subtract = function (num1, num2) {
   return num1 - num2;
 };
 
-const sum = function (...args) {
+const sum = function (args) {
   let total = 0;
   args.forEach((element) => {
     total += element;
@@ -14,12 +14,11 @@ const sum = function (...args) {
   return total;
 };
 
-const multiply = function (...args) {
+const multiply = function (args) {
   let total = 1;
   args.forEach((element) => {
     total = total * element;
   });
-  console.log(total);
   return total;
 };
 
